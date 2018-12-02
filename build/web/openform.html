@@ -20,10 +20,15 @@ input[type=text]:focus, input[type=password]:focus {
 }
 
 hr {
-    border: 1px solid #f1f1f1;
+    border: 1px solid #000000;
     margin-bottom: 25px;
 }
-
+input[type=text] {
+    width: 30%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
 /* Set a style for all buttons */
 button {
     background-color: #4CAF50;
@@ -45,6 +50,15 @@ button:hover {
     padding: 14px 20px;
     background-color: #f44336;
 }
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
 
 /* Float cancel and signup buttons and add an equal width */
 .cancelbtn, .signupbtn {
@@ -75,7 +89,14 @@ button[type=submit] {
     clear: both;
     display: table;
 }
-
+h1 {
+  font-weight: bold;
+  font-size: 50px;
+}
+h2 {
+ 
+  font-size: 30px;
+}
 /* Change styles for cancel button and signup button on extra small screens */
 @media screen and (max-width: 300px) {
     .cancelbtn, .signupbtn {
@@ -84,38 +105,35 @@ button[type=submit] {
 }
 </style>
 
-<body background="https://blog.visme.co/wp-content/uploads/2017/07/50-Beautiful-and-Minimalist-Presentation-Backgrounds-031.jpg">
-    
-<form  action="signup1" style="border:1px solid #ccc">
-  
-      <center> <h1>Sign Up</h1></center>
-    <p>Please fill in this form to create an account.</p>
+<body background="https://www.tun-tun.com/wp-content/uploads/simple-background-powerpoint-of-simple-presentation-backgrounds-for-powerpoint-hd-fabulous-simple-background-powerpoint.jpg">
+<form  action="admin.java" style="border:1px solid #ccc">
+  <div class="container">
+     
+          <h1><center>VOTE</center></h1>
     <hr>
     
-    <label for="uname"><b>Username</b></label>
-    <input type="text" placeholder="Enter username" name="username" required><br>
-
-    <label for="email"><b>Email</b></label>
-    <input type="text" placeholder="Enter Email" name="email" required><br>
-
-  `  <label for="psw"><b>Password</b></label>
-  <input type="password" placeholder="Enter Password" name="psw" required><br>
-
-    <label for="psw-repeat"><b>Repeat Password</b></label>
-    <input type="password" placeholder="Repeat Password" name="psw2" required><br>
-    
-    <label>
-      <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me<br>
-    </label>
-    
-    <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
-
-    <div class="clearfix">
-        <button type="button" class="cancelbtn">Cancel</button>
-      <button type="submit" class="signupbtn">Sign Up</button>
-    </div>
+    <b><h2>CHOOSE CAREFULLY AND VOTE WISELY</h2></b>
+     <input type="radio" value="Option A" name="optionsa" >
+    OPTION A<br><br>
+     
+  <input type="radio" name="optionsb" value="Option B" >
+  OPTION B<br><br>
   
+  <input type="radio" name="optionsc" value="Option C" >
+OPTION C<br><br>
+<input type="radio" name="optionsd" value="Option D" >
+OPTION D<br><br>
+<input type="radio" name="optionse" value="Option E" >
+OPTION E
+</div>
+    <div class="clearfix">
+        <button type="submit" class="cancelbtn">SUBMIT</button>
+    </div>
+    <hr>
 </form>
+      <font color="black"><marquee align= bottom loop="infinite" behavior="scroll" width="1500" hspace="2" vspace="2" direction="right" scrollamount="5">
+<h2>VOTE VOTE VOTE....
+</font> </h2></marquee>
 
 </body>
 </html>

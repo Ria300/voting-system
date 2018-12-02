@@ -51,6 +51,18 @@ button:hover {
   float: left;
   width: 50%;
 }
+button[type=button] {
+    width: 10%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+button[type=submit] {
+    width: 10%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
 
 /* Add padding to container elements */
 .container {
@@ -71,34 +83,38 @@ button:hover {
     }
 }
 </style>
-<body>
+
 <body background="https://blog.visme.co/wp-content/uploads/2017/07/50-Beautiful-and-Minimalist-Presentation-Backgrounds-031.jpg">
-<form action="/action_page.php" style="border:1px solid #ccc">
-  <div class="container">
+    
+<form  action="signup1" style="border:1px solid #ccc">
+  
       <center> <h1>Sign Up</h1></center>
     <p>Please fill in this form to create an account.</p>
     <hr>
+    
+    <label for="uname"><b>Username</b></label>
+    <input type="text" placeholder="Enter username" name="username" required><br>
 
     <label for="email"><b>Email</b></label>
-    <input type="text" placeholder="Enter Email" name="email" required>
+    <input type="text" placeholder="Enter Email" name="email" required><br>
 
-    <label for="psw"><b>Password</b></label>
-    <input type="password" placeholder="Enter Password" name="psw" required>
+  `  <label for="psw"><b>Password</b></label>
+  <input type="password" placeholder="Enter Password" name="psw" required><br>
 
     <label for="psw-repeat"><b>Repeat Password</b></label>
-    <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+    <input type="password" placeholder="Repeat Password" name="psw2" required><br>
     
     <label>
-      <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+      <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me<br>
     </label>
     
     <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
 
     <div class="clearfix">
-      <button type="button" class="cancelbtn">Cancel</button>
+        <button type="button" class="cancelbtn">Cancel</button>
       <button type="submit" class="signupbtn">Sign Up</button>
     </div>
-  </div>
+  
 </form>
 
 </body>

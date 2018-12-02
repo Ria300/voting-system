@@ -52,9 +52,26 @@ img.avatar {
 }
 
 .container {
-    padding: 16px;
+    padding: 10px;
 }
-
+input[type=text] {
+    width: 30%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+input[type=password] {
+    width: 30%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+button[type=submit] {
+    width: 10%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
 span.psw {
     float: right;
     padding-top: 16px;
@@ -72,30 +89,30 @@ span.psw {
 }
 </style>
 </head>
-<body>
 <body background="https://www.tun-tun.com/wp-content/uploads/simple-background-powerpoint-of-simple-presentation-backgrounds-for-powerpoint-hd-fabulous-simple-background-powerpoint.jpg">
-<center><h1>Login Form</h1/></center>
+<center><h1>Login Form</h1></center>
 
-<form action="/action_page.php">
+<form method="get" action="login1">
   <div class="imgcontainer">
       <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUFxY3y5-G-aI6cmigjgMPycoFZLXzsv0mbtKK0fSvfJgba0fI" alt="Avatar" class="avatar" style="width:500px;height:200px;" >
       <br>
 
   <div class="container">
     <label for="uname"><b>Username</b></label>
-    <input type="text" placeholder="Enter username" name="username" required>
+    <input type="text" placeholder="Enter username" name="username" required><br>
 
     <label for="psw"><b>Password</b></label>
-    <input type="password" placeholder="Enter Password" name="psw" required>
+    <input type="password" placeholder="Enter Password" name="psw" required><br>
         
-    <button type="submit">Login</button>
+    <button type="submit">Login</button><br>
     <label>
       <input type="checkbox" checked="checked" name="remember"> Remember me
     </label>
+   
   </div>
 
   <div class="container" style="background-color:#f1f1f1">
-      <center> <button type="button" class="cancelbtn" align="bottom">Cancel</button></center>
+      <center> <button type="button" class="cancelbtn" >Cancel</button></center>
     <span class="psw">Forgot <a href="#">password?</a></span>
   </div>
 </form>
